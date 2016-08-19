@@ -27,3 +27,29 @@ for i in numeros {
         print("\(i) " + "Viva Swift!!!")
     }
 }
+
+/* version imprimiendo 1 solo numero y concatenando los resultados*/
+
+var resultado = ""
+
+for i in numeros {
+    
+    resultado = ""
+    
+    if i % 5 == 0 {
+        resultado = " Bingo!!!"
+    }
+    if i % 2 == 0 {
+        resultado = resultado + " Par!!!"
+    }else {
+        resultado = resultado + " Impar!!!"
+    }
+    if i > 29 && i < 41 {
+        resultado = resultado + " Viva Swift!!!"
+    }
+    
+    print ("\(i) \(resultado)")
+    
+}
+
+
